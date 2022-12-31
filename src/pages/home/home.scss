@@ -1,0 +1,32 @@
+.homeContainer{
+    display: flex;
+    overflow: auto;
+    .homeContent{
+        flex: 5;
+        // background-color: red;
+        margin-top: 100px;
+        padding: 10px ;
+        box-shadow: 0 0 10px rgb(0,0,0,0.3);
+        .storyContainer{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 2px;
+            border-bottom: 1px solid lightgray;
+            padding: 10px ;
+        }
+        .newsfeedContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px ;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+    }
+}

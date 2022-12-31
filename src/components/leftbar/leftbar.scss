@@ -1,0 +1,65 @@
+
+@import "../../global.scss";
+
+.leftbar{
+    flex: 2;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+    margin-right: 30px ;
+
+    .leftContainer{
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        left: 0px;
+        top: 50px;
+        padding: 20px 30px;
+        text-align: left;
+        overflow: scroll;
+    &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px ;
+            .user{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                img{
+                    width: 30px ;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 5px ;
+                }
+                span{
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: $mainColor;
+                }
+            }
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 10px ;
+                cursor: pointer;
+                span{
+                    color:$text;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                }
+                i{
+                    color: $mainColor;
+
+                   
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.comments{
+    width: 100%;
+    margin-top: 20px ;
+    
+    .commentsInfo{
+        display: flex;
+        align-items: center;
+        gap: 10px ;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        input{
+            width: 100%;
+            padding: 10px 0px ;
+            border: none;
+            margin-bottom: 10px ;
+            border-bottom: 1px solid lightgray;
+        }
+    }
+
+    .commentContainer{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px ;
+    }
+}

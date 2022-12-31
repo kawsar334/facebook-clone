@@ -1,0 +1,81 @@
+
+@import "../../global.scss";
+.feed{
+    margin: 10px ;
+    width: 100%;
+    border: 1px solid $border;
+    .feedTop{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px ;
+
+        .feedInfoContainer{
+            display: flex;
+            gap: 5px ;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 20px solid black;
+            }
+            .feedInfo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .name{
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: black;
+                    cursor: pointer;
+                }
+                span{
+                    font-size: 13px ;
+                    font-weight: 400;
+                    color: $border;
+                }
+            }
+        }
+    }
+    .feedMiddle{
+        padding: 10px 20px ;
+        p{
+            text-align: justify;
+            padding: 10px 0px ;
+            color: #555;
+        }
+        img{
+            width: 100%;
+            height: 300px ;
+            object-fit: cover;
+            border-radius: 5px ;
+
+        }
+    }
+    .feedBottom{
+        padding: 10px 20px ;
+        
+        .newsfeedButtons{
+            display: flex;
+            margin-left: 20px ;
+            align-items: center;
+            gap: 10px ;
+            button{
+                display: flex;
+                align-items: center;
+                gap: 5px ;
+                cursor: pointer;
+                margin-left: 10px ;
+                cursor: pointer;
+
+                span{
+                    color: $mainColor;
+                    font-weight: 600;
+                }
+
+            }
+        }
+
+    }
+}

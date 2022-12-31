@@ -1,0 +1,80 @@
+@import "../../global.scss";
+
+
+.rightbar{
+        flex: 3;
+        margin-top: 60px;
+       
+      
+
+    .rightbarContainer{
+        padding: 20px;
+            position: fixed;
+            right: 20px;
+            top: 50px;
+            overflow: auto;
+            margin: 10px ;
+          height: 100vh;
+            &::-webkit-scrollbar {
+                    display: none;
+                }
+        
+
+
+        .item{
+            box-shadow: 0 0 10px rgb(0,0,0,0.1);
+            padding: 20px;
+            span{
+                color: gray;
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0px  ;
+                
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px ;
+                    p{
+                        font-size: 13px ;
+                        // padding: 10px;
+                        color: $border;
+                        text-transform: capitalize;
+                    }
+                    span{
+                        font-weight:700;
+                        color: $text;
+
+
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                }
+                .buttons{
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px ;
+                    button{
+                        border: 1px solid $border;
+                        background-color: $mainColor;
+                        padding: 5px ;
+                        border-radius: 5px ;
+                        font-size: 13px;
+                        color: $white;
+                        &:last-child{
+                            background-color: crimson;
+                            margin-right: 10px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
