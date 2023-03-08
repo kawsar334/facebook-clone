@@ -1,3 +1,6 @@
+
+@import "../../global.scss";
+
 .homeContainer{
     display: flex;
     overflow: auto;
@@ -14,10 +17,13 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            flex-wrap: wrap;
-            gap: 2px;
             border-bottom: 1px solid lightgray;
             padding: 10px ;
+            gap: 10px;
+            @include mobile{
+                overflow-x: scroll;
+                gap: 5px;
+            }
         }
         .newsfeedContainer{
             display: flex;

@@ -5,6 +5,12 @@
     flex: 2;
     box-shadow: 0 0 10px rgb(0,0,0,0.1);
     margin-right: 30px ;
+    background-color: white;
+    @include mobile{
+    margin-right: 0px;
+
+    }
+  
 
     .leftContainer{
         height: 100vh;
@@ -15,19 +21,45 @@
         padding: 20px 30px;
         text-align: left;
         overflow: scroll;
-    &::-webkit-scrollbar {
+        .fa-xmark{
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            cursor: pointer;
+            padding: 5px ;
+            font-size: 20px;
             display: none;
+            @include mobile {
+                  display: block;
+                }
+
         }
 
-        .menu{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px ;
+        @include mobile {
+                width: 200px;
+                top: 95px;
+                left: -30px;
+                overflow: hidden;
+            }
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px ;
+                @include mobile {
+                    background-color:white;
+                    z-index: 2;
+                    border: 1px solid lightgray;
+                    }
             .user{
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                margin-top: 20px;
 
                 img{
                     width: 30px ;
@@ -48,13 +80,23 @@
                 align-items: center;
                 gap: 10px ;
                 cursor: pointer;
+                @include mobile {
+                      
+                        
+                       
+                    }
                 span{
                     color:$text;
                     font-weight: 500;
                     text-transform: capitalize;
+                    @include mobile {
+                        font-size: 14px;
+                        font-weight: 600;
+                        }
                 }
                 i{
                     color: $mainColor;
+                    padding: 5px ;
 
                    
                 }

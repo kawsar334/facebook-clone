@@ -1,8 +1,11 @@
+import Navbar from "../../components/navbar/Navbar"
 import "./profile.scss"
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 

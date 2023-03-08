@@ -34,10 +34,7 @@ const Feed = () => {
         </div>
 
         
-        <div className="commentsContainer">
-
-           <Comments  /> 
-        </div> 
+       
       </div>
 
     </div>

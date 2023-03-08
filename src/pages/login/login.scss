@@ -19,6 +19,7 @@
         background-color: white;
         border-radius: 10px ;
         min-height: 500px ;
+        
         @include mobile {
             flex-direction: column-reverse;
             gap: 10px ;
@@ -27,6 +28,7 @@
         .left{
             flex: 1;
             background:linear-gradient(to top , rgb(0,0,0,0.1),rgb(0,0,0,0.4)), url('../../../public/imgs/o.png') center;
+            
             background-size: cover;
             padding: 50px ;
             display: flex;

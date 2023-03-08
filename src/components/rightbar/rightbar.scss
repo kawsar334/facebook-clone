@@ -4,17 +4,31 @@
 .rightbar{
         flex: 3;
         margin-top: 60px;
-       
-      
-
-    .rightbarContainer{
-        padding: 20px;
+        @include mobile{
+            display: none;
+          
+        }
+        
+        
+        
+        .rightbarContainer{
+            padding: 20px;
             position: fixed;
             right: 20px;
             top: 50px;
             overflow: auto;
             margin: 10px ;
-          height: 100vh;
+            height: 100vh;
+            background-color: white;
+            border-radius: 20px;
+            @include mobile {
+                width: 200px;
+         
+            padding: 0px;
+            top: 60px;
+            right: 0px;
+          
+        }
             &::-webkit-scrollbar {
                     display: none;
                 }
@@ -24,6 +38,10 @@
         .item{
             box-shadow: 0 0 10px rgb(0,0,0,0.1);
             padding: 20px;
+            @include mobile {
+                padding: 10px;
+                background-color: white;
+            }
             span{
                 color: gray;
             }
@@ -32,21 +50,35 @@
                 align-items: center;
                 justify-content: space-between;
                 margin: 20px 0px  ;
+                @include mobile {
+                    // background-color: red;
+                    border-bottom: 0.1px solid $border;
+                    padding-bottom: 5px;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                        
+                        
+                    }
                 
                 .userInfo{
                     display: flex;
                     align-items: center;
                     gap: 10px ;
+
                     p{
                         font-size: 13px ;
-                        // padding: 10px;
-                        color: $border;
+                        padding: 10px;
+                        color:#555;
                         text-transform: capitalize;
+                        @include mobile {
+                                font-size: 14px;
+                                
+                            }
                     }
                     span{
                         font-weight:700;
                         color: $text;
-
+                        margin-right: 5px;
 
                     }
                     img{

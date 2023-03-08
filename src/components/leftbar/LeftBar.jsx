@@ -1,11 +1,15 @@
 import "./leftbar.scss" ;
 
-const LeftBar = () => {
+const LeftBar = ( { open , setOpen }) => {
   return (
-    <div className="leftbar">
+    <>
+
+   { open && <div className="leftbar">
       <div className="leftContainer">
+              <i className="fa-solid fa-xmark menuIcon" onClick={() => setOpen(!open)}></i>
         <div className="menu">
           <div className="user">
+
             <img src="https://images.pexels.com/photos/7083924/pexels-photo-7083924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Loading..." />
             <span>kawsar firoz</span>
           </div>
@@ -148,7 +152,8 @@ const LeftBar = () => {
           {/*  */}
         </div>
       </div>
-    </div>
+    </div>}
+    </>
   )
 }
 
